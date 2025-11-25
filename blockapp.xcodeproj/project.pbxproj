@@ -6,11 +6,66 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FF528E8F2DD5EF25009DE291 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF528E8E2DD5EF24009DE291 /* DeviceActivity.framework */; };
+		FF528E972DD5EF25009DE291 /* ActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FF528E8C2DD5EF24009DE291 /* ActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FF528EBD2DD65CA4009DE291 /* FamilyControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF528EBB2DD657BD009DE291 /* FamilyControls.framework */; };
+		FF528EC62DE25F38009DE291 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF528EC52DE25F38009DE291 /* EventKit.framework */; };
+		FF82A9242DAD61FF00E5F3D5 /* ThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = FF82A9232DAD61FF00E5F3D5 /* ThemeKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF528E952DD5EF25009DE291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF82A9092DAAA90D00E5F3D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF528E8B2DD5EF24009DE291;
+			remoteInfo = ActivityMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF528E9C2DD5EF25009DE291 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FF528E972DD5EF25009DE291 /* ActivityMonitor.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		FF528E8C2DD5EF24009DE291 /* ActivityMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActivityMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF528E8E2DD5EF24009DE291 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
+		FF528EBB2DD657BD009DE291 /* FamilyControls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FamilyControls.framework; path = System/Library/Frameworks/FamilyControls.framework; sourceTree = SDKROOT; };
+		FF528EC22DDA327D009DE291 /* ActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework; path = System/Library/Frameworks/ActivityKit.framework; sourceTree = SDKROOT; };
+		FF528EC52DE25F38009DE291 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		FF82A9112DAAA90D00E5F3D5 /* blockapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blockapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FF528E982DD5EF25009DE291 /* Exceptions for "ActivityMonitor" folder in "ActivityMonitor" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FF528E8B2DD5EF24009DE291 /* ActivityMonitor */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		FF528E902DD5EF25009DE291 /* ActivityMonitor */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FF528E982DD5EF25009DE291 /* Exceptions for "ActivityMonitor" folder in "ActivityMonitor" target */,
+			);
+			path = ActivityMonitor;
+			sourceTree = "<group>";
+		};
 		FF82A9132DAAA90D00E5F3D5 /* blockapp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = blockapp;
@@ -19,20 +74,44 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FF528E892DD5EF24009DE291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF528E8F2DD5EF25009DE291 /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF82A90E2DAAA90D00E5F3D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF528EC62DE25F38009DE291 /* EventKit.framework in Frameworks */,
+				FF528EBD2DD65CA4009DE291 /* FamilyControls.framework in Frameworks */,
+				FF82A9242DAD61FF00E5F3D5 /* ThemeKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF528E8D2DD5EF24009DE291 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF528EC52DE25F38009DE291 /* EventKit.framework */,
+				FF528EC22DDA327D009DE291 /* ActivityKit.framework */,
+				FF528EBB2DD657BD009DE291 /* FamilyControls.framework */,
+				FF528E8E2DD5EF24009DE291 /* DeviceActivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF82A9082DAAA90D00E5F3D5 = {
 			isa = PBXGroup;
 			children = (
 				FF82A9132DAAA90D00E5F3D5 /* blockapp */,
+				FF528E902DD5EF25009DE291 /* ActivityMonitor */,
+				FF528E8D2DD5EF24009DE291 /* Frameworks */,
 				FF82A9122DAAA90D00E5F3D5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				FF82A9112DAAA90D00E5F3D5 /* blockapp.app */,
+				FF528E8C2DD5EF24009DE291 /* ActivityMonitor.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +128,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FF528E8B2DD5EF24009DE291 /* ActivityMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF528E992DD5EF25009DE291 /* Build configuration list for PBXNativeTarget "ActivityMonitor" */;
+			buildPhases = (
+				FF528E882DD5EF24009DE291 /* Sources */,
+				FF528E892DD5EF24009DE291 /* Frameworks */,
+				FF528E8A2DD5EF24009DE291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FF528E902DD5EF25009DE291 /* ActivityMonitor */,
+			);
+			name = ActivityMonitor;
+			packageProductDependencies = (
+			);
+			productName = ActivityMonitor;
+			productReference = FF528E8C2DD5EF24009DE291 /* ActivityMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		FF82A9102DAAA90D00E5F3D5 /* blockapp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF82A91F2DAAA91000E5F3D5 /* Build configuration list for PBXNativeTarget "blockapp" */;
@@ -55,16 +157,20 @@
 				FF82A90D2DAAA90D00E5F3D5 /* Sources */,
 				FF82A90E2DAAA90D00E5F3D5 /* Frameworks */,
 				FF82A90F2DAAA90D00E5F3D5 /* Resources */,
+				FF528E9C2DD5EF25009DE291 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FF528EC12DD66AA9009DE291 /* PBXTargetDependency */,
+				FF528E962DD5EF25009DE291 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				FF82A9132DAAA90D00E5F3D5 /* blockapp */,
 			);
 			name = blockapp;
 			packageProductDependencies = (
+				FF82A9232DAD61FF00E5F3D5 /* ThemeKit */,
 			);
 			productName = blockapp;
 			productReference = FF82A9112DAAA90D00E5F3D5 /* blockapp.app */;
@@ -80,6 +186,9 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					FF528E8B2DD5EF24009DE291 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					FF82A9102DAAA90D00E5F3D5 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -94,17 +203,28 @@
 			);
 			mainGroup = FF82A9082DAAA90D00E5F3D5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FF82A9222DAD61FF00E5F3D5 /* XCLocalSwiftPackageReference "../Scrumdinger/ThemeKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FF82A9122DAAA90D00E5F3D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FF82A9102DAAA90D00E5F3D5 /* blockapp */,
+				FF528E8B2DD5EF24009DE291 /* ActivityMonitor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FF528E8A2DD5EF24009DE291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF82A90F2DAAA90D00E5F3D5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +235,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FF528E882DD5EF24009DE291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF82A90D2DAAA90D00E5F3D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +251,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FF528E962DD5EF25009DE291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF528E8B2DD5EF24009DE291 /* ActivityMonitor */;
+			targetProxy = FF528E952DD5EF25009DE291 /* PBXContainerItemProxy */;
+		};
+		FF528EC12DD66AA9009DE291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = FF528EC02DD66AA9009DE291 /* ThemeKit */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		FF528E9A2DD5EF25009DE291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ActivityMonitor/ActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JanOsusky.blockapp.ActivityMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF528E9B2DD5EF25009DE291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ActivityMonitor/ActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JanOsusky.blockapp.ActivityMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FF82A91D2DAAA91000E5F3D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -249,14 +440,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = blockapp/blockapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"blockapp/Preview Content\"";
+				DEVELOPMENT_TEAM = 732THCD6HG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -277,14 +471,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = blockapp/blockapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"blockapp/Preview Content\"";
+				DEVELOPMENT_TEAM = 732THCD6HG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -303,6 +500,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FF528E992DD5EF25009DE291 /* Build configuration list for PBXNativeTarget "ActivityMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF528E9A2DD5EF25009DE291 /* Debug */,
+				FF528E9B2DD5EF25009DE291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FF82A90C2DAAA90D00E5F3D5 /* Build configuration list for PBXProject "blockapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -322,6 +528,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		FF82A9222DAD61FF00E5F3D5 /* XCLocalSwiftPackageReference "../Scrumdinger/ThemeKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Scrumdinger/ThemeKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF528EC02DD66AA9009DE291 /* ThemeKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF82A9222DAD61FF00E5F3D5 /* XCLocalSwiftPackageReference "../Scrumdinger/ThemeKit" */;
+			productName = ThemeKit;
+		};
+		FF82A9232DAD61FF00E5F3D5 /* ThemeKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ThemeKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FF82A9092DAAA90D00E5F3D5 /* Project object */;
 }
